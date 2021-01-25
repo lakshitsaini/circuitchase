@@ -1,0 +1,1 @@
+web: gunicorn freshers_hunt.wsgi --log-file -
