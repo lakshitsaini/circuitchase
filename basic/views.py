@@ -74,8 +74,11 @@ def quiz(request):
                 
                 context  = {
                     'secret_key'  : secret_key,
+                    'answer_list' : answer_list,
+                    'name' : name,
 
                 }
+                print(question_set)
                 return render(request,'ty.html' ,context)
             else :
                 
