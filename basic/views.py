@@ -12,7 +12,8 @@ import json
 def home(request):
     return render(request,'index.html')
 
-
+def loaderio(request):
+    return render(request,'loaderio-f3c731dc5ea8a201c360f115e6bedceb.html')
 
 def quiz(request):
     if(request.method == 'GET'):
