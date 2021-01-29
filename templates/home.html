@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Inner Page - Selecao Bootstrap Template</title>
+  <title>Circuit Chase</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -46,7 +46,7 @@
     <div class="container d-flex align-items-center">
       <a href="/"><img src={% static "img/logo2.png"%} alt="EA AND HAM LOGO" style="width: 40px;" class="img-fluid mx-3"></a>
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="/">Circuit Chase</a></h1>
+        <h1 class="text-light"><a href="/">CIRCUIT CHASE 2021</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
       </div>
 
@@ -86,16 +86,16 @@
                 {% csrf_token %}
                     <div class="form-group">
                         <label for="fname">Name:</label><br>
-                        <input class="form-control" type="text" id="name" name="name" value="John">
+                        <input class="form-control" type="text" id="name" name="name" value="John" required>
                     </div>
                     <div class="form-group">
                         <label for="reg_no">Registration Number:</label><br>
-                        <input class="form-control" type="text" id="lnareg_nome" name="reg_no" value="123456">
+                        <input class="form-control" type="text" id="lnareg_nome" name="reg_no" value="123456" required>
                     </div>
-                    <div class="form-group">
+                    {% comment %} <div class="form-group">
                         <label for="question_set">Question Set : </label><br>
                         <input class="form-control" type="number" id="question_set" name="question_set" value="">
-                    </div>
+                    </div> {% endcomment %}
                         <input type="hidden" id="question_number" name="question_number" value="0">
                     <input class="btn btn-success" type="submit" value="Submit">
             </form> 
@@ -110,7 +110,8 @@
   <footer id="footer">
     <div class="container">
       <h3>Electronics Amateur & HAM Club</h3>
-      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo dolor suscipit molestias. Tenetur, consequuntur officiis. </p>
+      <p>A group of techies who love to explore new domains and keep doing projects to learn something new.</p>
+      <p>#EAnHAM_NEVER_STOPS</p>
       <div class="social-links">
         <a href="https://twitter.com/eahamnitw" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
         <a href="https://www.facebook.com/eahamnitw/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
@@ -118,7 +119,7 @@
         <a href="https://in.linkedin.com/company/ea-ham-club-nitw" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>EA&HAM NITW</span></strong>. All Rights Reserved
+        &copy;<strong><span>EA & HAM Club NITW</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer>

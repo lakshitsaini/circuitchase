@@ -59,7 +59,8 @@
     <div class="hero-container mt-5" data-aos="fade-up" data-aos-delay="200">
       <h1>CIRCUIT CHASE 2021</h1>
       <h2>Showcase your Circuit Knowledge and stand a chance to become Mr/Ms EA & HAM!</h2>
-      <div class="countdown" data-count="2021/01/30 18:00:00" data-template="%w weeks %d days <br> %H:%M:%S"></div>
+      <div id="start" class="countdown" data-count="2021/01/30 18:00:00" data-template="Starts In <br> %H Hours %M Minutes %S Seconds"></div>
+      <div id="end" class="countdown2" data-count="2021/01/30 21:00:00" data-template="Ends In <br> %H Hours %M Minutes %S Seconds"></div>
 
       <a href="#services" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
       <h2>Scroll down for rules!</h2>
@@ -132,7 +133,7 @@
 
         </div>
         <div style="display: flex;justify-content: center;align-items: center;" >
-          <a href="#" class="quiz-btn mt-4 scrollto">Start Quiz!</a>
+          <a id="quiz" href="#" class="quiz-btn mt-4 scrollto">Start Quiz!</a>
         </div>
 
       </div>
@@ -241,8 +242,7 @@
   <script src={% static "js/main.js" %}></script>
   <script>
     $(function() {
-  AOS.init();
-});
+  AOS.init();});
   </script>
 
 </body>
