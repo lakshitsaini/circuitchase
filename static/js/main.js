@@ -30,12 +30,13 @@
         $(this).html(event.strftime(template2));
       });
       }
+      var quiz = document.getElementById("quiz")
+      quiz.setAttribute("href","/quiz")
     }
     else{
       $('.countdown2').remove();
       var elem = document.getElementById("start")
       elem.innerHTML = "Chase has Ended!"
-      var quiz = document.getElementById("quiz")
       quiz.setAttribute("href","#")
     }
   },0);

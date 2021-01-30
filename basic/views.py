@@ -31,7 +31,7 @@ def getSet(reg_no):
             print(dict)
             return(dict['question_set'])
     else:
-        return random.randint(1,5)
+        return random.randint(1,4)
 
 
 def quiz(request):

@@ -91,6 +91,8 @@
                 <label class="mt-3" for="question_set">Answer :  </label><br>
                 <input class="form-control" type="text" id="answer" name="answer" value="" required><br><br>
               </div>
+              <p>Give your answers in singular terms (not plural) without any article </p>
+              <p>E.g. diode (Not <u>diodes</u> or <u>a diode</u>)</p>
               <input type="hidden" id="question_set" name="question_set" value={{question_set}}>
               <input type="hidden" id="question_number" name="question_number" value={{question_number}}>
               <input type="hidden" id="name" name="name" value={{name}}>
@@ -102,6 +104,9 @@
           </div>
         </th>
         </table>
+      </div>
+      <div class="container text-center alert alert-warning" role="alert">
+        Call here for technical assistance: <strong>+91-7768909444, +91-8421978056, +91-6377817840</strong>
       </div>
     </section>
 
@@ -136,7 +141,7 @@
 
   <!-- Template Main JS File -->
   <script src="{% static "js/main2.js"%}"></script>
-  <script id="hint">
+  <!-- <script id="hint">
     function hintFunc() {
       var parent = document.getElementById("que");
       var elem1 = document.createElement("DIV");
@@ -154,7 +159,7 @@
       parent.appendChild(elem1)
     }
     setTimeout(hintFunc, 5000);
-    </script>
+    </script> -->
 </body>
 
 </html>

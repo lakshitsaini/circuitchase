@@ -14,9 +14,6 @@
   <link href="{% static "img/favicon.png"%}" rel="icon">
   <link href="{% static "img/apple-touch-icon.png"%}" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="{% static https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
   <link href="{% static "vendor/bootstrap/css/bootstrap.min.css"%}" rel="stylesheet">
   <link href="{% static "vendor/icofont/icofont.min.css"%}" rel="stylesheet">
@@ -84,20 +81,20 @@
       <div class="container d-flex justify-content-center text-center">
         <table><th>
           <div class="form-group">
-           <h4> Thank You for Participating</h4>
+           <h4>Bravo! You completed the first step in the Hunt.</h4>
            <h5>Here are all your components : </h5>
           {% for ans in answer_list %}
           <h4>{{ans}}</h4><br>
           {% endfor %}
-           <h4>Your Secret Key to success is {{secret_key}}</h4>
+           <h4 class="font-weight-bold">Your Secret Key to success is {{secret_key}}</h4>
           </div>
           <div class="jumbotron mt-5" style="padding: 2rem;">
-            <h3 class="text-left font-weight-bold" >Your Clue for the circuit is :</h3>
+            <h3 class="text-left font-weight-bold" >Your Clue for the circuit :</h3>
             <hr>
             <p class="lead text-justify">{{circuit_clue}}</p>
-            <h4>Please uplaod your circuit in the link given.</h4>
+            <h4>Draw the circuit diagram on a paper and upload with secret key in the form link given below.</h4>
             <p class="lead">
-              <a class="btn btn-primary mt-2" target="_blank" href="https://forms.gle/j9jMbfFZJPpGX54S7" role="button">Submit Here</a>
+              <a class="btn btn-primary mt-2" target="_blank" href="https://forms.gle/j9jMbfFZJPpGX54S7" role="button">Fill Details</a>
             </p>
           </div>
         </th>
