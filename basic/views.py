@@ -6,8 +6,8 @@ import datetime
 import bcrypt
 import json
 import random
-
-
+import pytz
+IST = pytz.timezone('Asia/Kolkata') 
 # Create your views here.
 
 def home(request):
@@ -58,7 +58,7 @@ def quiz(request):
             answer_list = qa_set['answers']
             hint_list = qa_set['hints']
             print(question_set)
-            start_time  = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f")
+            start_time  = datetime.datetime.now(IST).strftime("%Y-%m-%dT%H:%M:%S.%f")
 
             participant_data['name'] = name
             participant_data['registration_number'] = registration_number
@@ -101,7 +101,7 @@ def quiz(request):
                 db = firestore.client()
                 db_ref = db.collection('participants')
                 db_document = db_ref.where('name','==',name).stream()
-                last_time = str(datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%S.%f"))
+                last_time = str(datetime.datetime.now(IST).strftime("%Y-%m-%dT%H:%M:%S.%f"))
                 for d in db_document :
                     dict = d.to_dict()
                    
