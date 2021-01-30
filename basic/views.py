@@ -111,7 +111,7 @@ def quiz(request):
                     db_ref.document(participant_id).set(dict)
                 
                 context  = {
-                    'secret_key'  : secret_key,
+                    'secret_key'  : "qJJVd3sYHsj9bxf6mvNt",
                     'answer_list' : answer_list,
                     'name' : name,
                     'circuit_clue' : circuit_clue[question_set]
